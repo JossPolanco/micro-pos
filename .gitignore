@@ -1,0 +1,73 @@
+# ==========================================
+# Micro-POS — Monorepo .gitignore
+# Frontend (React/Vite) + Core (Rust/Tauri) + Backend (C# .NET 10)
+# ==========================================
+
+# ------------------------------------------
+# 1. Frontend & Node.js
+# ------------------------------------------
+node_modules/
+dist/
+dist-ssr/
+.vite/
+.vite-temp/
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------
+# 2. .NET 10 & C#
+# ------------------------------------------
+**/[Bb]in/
+**/[Oo]bj/
+**/publish/
+.vs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.sln.docstates
+
+# ------------------------------------------
+# 3. Rust & Tauri v2
+# ------------------------------------------
+target/
+src-tauri/target/
+src-tauri/gen/schemas/
+
+# Ignore compiled sidecar binaries (over 100MB, would be rejected by GitHub)
+# Keep the folder tracked via .gitkeep
+src-tauri/binaries/*
+!src-tauri/binaries/.gitkeep
+
+# ------------------------------------------
+# 4. SQLite Databases & WAL Files
+# ------------------------------------------
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+
+# ------------------------------------------
+# 5. OS & Editor Artifacts
+# ------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDEs
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.sw?

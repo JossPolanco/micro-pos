@@ -1,0 +1,23 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Permisos principales para la ventana de Micro-POS y el Sidecar de .NET 10",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    {
+      "identifier": "shell:allow-spawn",
+      "allow": [
+        {
+          "name": "binaries/micro-pos-api",
+          "sidecar": true
+        },
+        {
+          "name": "micro-pos-api",
+          "sidecar": true
+        }
+      ]
+    },
+    "shell:allow-kill"
+  ]
+}
