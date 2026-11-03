@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "main": "Principal",
+    "home": "Inicio",
+    "management": "Administración",
+    "admin": "Gestión",
+    "users": "Usuarios",
+    "roles": "Roles y Permisos",
+    "system": "Sistema",
+    "settings": "Configuración",
+    "testing": "Pruebas / Debug",
+    "breadcrumb": {
+      "home": "Inicio",
+      "default": "Página"
+    }
+  },
+  "navbar": {
+    "search": "Búsqueda rápida...",
+    "search_alert": "Búsqueda rápida próximamente",
+    "notifications": "Notificaciones",
+    "empty_notifications": "Sin notificaciones",
+    "empty_notifications_desc": "Todo está al día por ahora.",
+    "pin_sidebar": "Fijar barra lateral",
+    "unpin_sidebar": "Desfijar barra lateral",
+    "version": "Micro-POS v0.1.0 • En línea"
+  },
+  "notifications": {
+    "count": "{{count}} nuevas"
+  }
+}
+
