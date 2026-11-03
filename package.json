@@ -21,6 +21,8 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.18.5",
+    "react-simple-keyboard": "^3.8.293",
+    "simple-keyboard": "^3.8.204",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {

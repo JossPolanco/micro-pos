@@ -38,6 +38,12 @@ importers:
       react-router-dom:
         specifier: ^7.18.5
         version: 7.18.5(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      react-simple-keyboard:
+        specifier: ^3.8.293
+        version: 3.8.293(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      simple-keyboard:
+        specifier: ^3.8.204
+        version: 3.8.204
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3
@@ -655,6 +661,12 @@ packages:
       react-dom:
         optional: true
 
+  react-simple-keyboard@3.8.293:
+    resolution: {integrity: sha512-oKnoHmez8eTNwBNByIRcTfSAEE7Srk9nj7VMBjjFwDqcGYLOLOwzQMHn+scqjg6pPUZqYGqfkAFkGEv8Hr/Jfw==}
+    peerDependencies:
+      react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
   react@19.3.1:
     resolution: {integrity: sha512-QNhWdt7nrgVWWQG58QuGsAR3jv3Hbe4mb4vz7w2csnHavciZJgda1CPNaldF6eVxv90ud3jUXpKlHL69gO38yw==}
     engines: {node: '>=0.10.0'}
@@ -669,6 +681,9 @@ packages:
 
   set-cookie-parser@2.7.3:
     resolution: {integrity: sha512-irZHtTqurLna57KQG/s+fzOwv/J6XSH4cs8M/vsrY3uCaQ3S6+QJguAH0WdN47SXlk82voMZ4naWMQf8fdEoIg==}
+
+  simple-keyboard@3.8.204:
+    resolution: {integrity: sha512-Am4Bk/wCtlBgKqL/uWRy5G8LFk5WcwX3KhjirhFu/onLunYi3C7HufOCg3+s+/4mMWYzRRB2kRCImq8ltwj+OQ==}
 
   source-map-js@1.2.2:
     resolution: {integrity: sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw==}
@@ -1130,6 +1145,11 @@ snapshots:
     optionalDependencies:
       react-dom: 19.3.1(react@19.3.1)
 
+  react-simple-keyboard@3.8.293(react-dom@19.3.1(react@19.3.1))(react@19.3.1):
+    dependencies:
+      react: 19.3.1
+      react-dom: 19.3.1(react@19.3.1)
+
   react@19.3.1: {}
 
   rolldown@1.2.16:
@@ -1156,6 +1176,8 @@ snapshots:
   scheduler@0.28.0: {}
 
   set-cookie-parser@2.7.3: {}
+
+  simple-keyboard@3.8.204: {}
 
   source-map-js@1.2.2: {}
 

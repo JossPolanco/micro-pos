@@ -33,3 +33,86 @@
   --depth: 1;
   --noise: 0;
 }
+
+/* ==========================================================================
+   CUSTOM STYLES FOR SIMPLE-KEYBOARD (MICRO-POS TOUCH AND MOUSE UI)
+   ========================================================================== */
+.pos-simple-keyboard.hg-theme-default {
+  background-color: transparent;
+  padding: 0.15rem;
+  font-family: inherit;
+}
+
+.pos-simple-keyboard.hg-theme-default .hg-row {
+  margin-bottom: 0.35rem;
+}
+
+.pos-simple-keyboard.hg-theme-default .hg-row:last-child {
+  margin-bottom: 0;
+}
+
+.pos-simple-keyboard.hg-theme-default .hg-button {
+  height: 2.9rem;
+  border-radius: 0.75rem;
+  background: var(--color-base-100);
+  border: 1px solid var(--color-base-300);
+  border-bottom-width: 2px;
+  color: var(--color-base-content);
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  transition: transform 0.08s ease, background-color 0.12s ease, border-color 0.12s ease;
+  margin-right: 0.35rem;
+}
+
+.pos-simple-keyboard.hg-theme-default .hg-button:last-child {
+  margin-right: 0;
+}
+
+.pos-simple-keyboard.hg-theme-default .hg-button:hover {
+  background: var(--color-base-300);
+  border-color: var(--color-primary);
+}
+
+.pos-simple-keyboard.hg-theme-default .hg-button:active,
+.pos-simple-keyboard.hg-theme-default .hg-button.hg-activeButton {
+  transform: translateY(1px) scale(0.98);
+  background: var(--color-primary);
+  color: var(--color-primary-content);
+  border-color: var(--color-primary);
+}
+
+/* LARGER BUTTONS FOR NUMERIC MODE (PIN / PASSWORD) */
+.pos-keyboard-numeric .pos-simple-keyboard.hg-theme-default .hg-button {
+  height: 3.2rem;
+  font-size: 1.15rem;
+}
+
+/* SECONDARY ACTION KEYS (BACKSPACE, SHIFT) */
+.pos-simple-keyboard.hg-theme-default .hg-button.pos-key-action {
+  background: var(--color-base-300);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+/* CLEAR KEY */
+.pos-simple-keyboard.hg-theme-default .hg-button.pos-key-clear {
+  background: color-mix(in oklab, var(--color-error) 12%, var(--color-base-100));
+  color: var(--color-error-content);
+  border-color: color-mix(in oklab, var(--color-error) 30%, var(--color-base-300));
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* ENTER / CONTINUE KEY */
+.pos-simple-keyboard.hg-theme-default .hg-button.pos-key-enter {
+  background: var(--color-primary);
+  color: var(--color-primary-content);
+  border-color: var(--color-primary);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.pos-simple-keyboard.hg-theme-default .hg-button.pos-key-enter:hover {
+  filter: brightness(1.08);
+}
